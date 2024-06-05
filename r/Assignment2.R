@@ -28,3 +28,8 @@ write.csv(csvframe, file = "r_csv/vehicle.csv", row.names = FALSE)
 
 cat("CSV file has been saved in the 'r_csv' folder.\n")
 
+library(knitr)
+data <- read.csv("vehicle.csv")
+subset_data <- head(data)
+print(subset_data)
+
